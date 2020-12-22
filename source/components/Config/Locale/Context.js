@@ -1,9 +1,10 @@
 // context.js
 import React from 'react';
-export const ConfigContext = React.createContext({
+export const LocaleContext = React.createContext({
   Locale: 'zh_CN',
 });
-export const Provider = ConfigContext.Provider;
-export const Consumer = ConfigContext.Consumer;
+export const Provider = LocaleContext.Provider;
+export const Consumer = LocaleContext.Consumer;
+
 
 

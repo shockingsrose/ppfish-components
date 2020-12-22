@@ -1,5 +1,5 @@
 const localeValues = {
-  locale: 'zh-cn',
+  locale: 'zh',
   // locales for all comoponents
   global: {
     placeholder: '请选择',
