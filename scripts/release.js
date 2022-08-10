@@ -20,7 +20,7 @@ const execAsync = promisify(exec);
       type: 'list',
       name: 'newVersion',
       message: 'run npm version',
-      choices: ['patch', 'minor', 'major', 'prerelease', 'prerelease:alpha', 'prerelease:beta', 'prerelease:rc', 'prerelease:stable'],
+      choices: ['patch', 'minor', 'major', 'prerelease', 'prerelease:alpha', 'prerelease:dev'],
       loop: false,
     },
     // {
