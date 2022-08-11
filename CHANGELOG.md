@@ -1,3 +1,12 @@
+## [2.2.6](https://github.com/NSFI/ppfish-components/compare/v2.2.5...v2.2.6) (2022-08-11)
+
+
+### Features
+
+* 增加git add . ([4815027](https://github.com/NSFI/ppfish-components/commit/48150273de7ee796add67020248795066118a880))
+
+
+
 ## [2.2.5](https://github.com/NSFI/ppfish-components/compare/v2.2.4...v2.2.5) (2022-08-11)
 
 
