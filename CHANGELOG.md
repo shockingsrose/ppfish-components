@@ -1,3 +1,12 @@
+## [2.2.7](https://github.com/NSFI/ppfish-components/compare/v2.2.6...v2.2.7) (2022-08-11)
+
+
+### Features
+
+* 更新release follow-tags ([e6a1253](https://github.com/NSFI/ppfish-components/commit/e6a1253dbfae29dffdc851e849af531c0b24599b))
+
+
+
 ## [2.2.6](https://github.com/NSFI/ppfish-components/compare/v2.2.5...v2.2.6) (2022-08-11)
 
 
@@ -59,7 +68,7 @@
 
 
 
-## [2.2.1-rc.0](https://github.com/NSFI/ppfish-components/compare/2.2.1...v2.2.1-rc.0) (2022-08-10)
+## [2.2.1-rc.0](https://github.com/NSFI/ppfish-components/compare/2.2.6...v2.2.1-rc.0) (2022-08-10)
 
 
 ### Features
@@ -68,7 +77,7 @@
 
 
 
-## [2.2.1](https://github.com/NSFI/ppfish-components/compare/v1.8.2-alpha.3...2.2.1) (2022-08-09)
+## [2.2.6](https://github.com/NSFI/ppfish-components/compare/2.2.1...2.2.6) (2022-08-09)
 
 
 ### Bug Fixes
