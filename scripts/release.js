@@ -5,7 +5,7 @@ const { exec } = require('child_process');
 const execAsync = promisify(exec);
 
 const gitCommit = async (version) => {
-  await execAsync(`git commit -m build:update version to ${version}`)
+  await execAsync(`git commit -m 'build:update version to ${version}'`)
 }
 
 const gitPush = async (version) => {
