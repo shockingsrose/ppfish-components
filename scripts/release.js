@@ -1,9 +1,16 @@
 const inquirer = require('inquirer');
 const chalk = require('chalk');
-// import chalk from 'chalk';
 const { promisify } = require('util')
 const { exec } = require('child_process');
 const execAsync = promisify(exec);
+
+const gitCommit = async (version) => {
+  await execAsync(`git commit -m build:update version to ${version}`)
+}
+
+const gitPush = async (version) => {
+  await execAsync(`git push --tags`)
+}
 
 (async () => {
 
@@ -48,9 +55,14 @@ const execAsync = promisify(exec);
     const { stdout } = await execAsync(`npm version ${newVersion}`);
     console.log(chalk.green(`new version: ${stdout}`));
 
-    // TODO 生成changelog
-    // TODO 提交commit
-    // TODO git push --follow-tags
+    /** 生成changelog */
+    await execAsync(`npm run changelog:init`);
+
+    /** 提交commit */
+    await gitCommit(version);
+
+    /** git push --follow-tags */
+    await gitPush()
   } catch (error) {
     console.log(chalk.red(error.stderr));
   }
