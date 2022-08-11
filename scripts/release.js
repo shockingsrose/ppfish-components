@@ -9,7 +9,7 @@ const gitCommit = async (version) => {
 }
 
 const gitPush = async (version) => {
-  await execAsync(`git push --tags`)
+  await execAsync(`git push --follow-tags`)
 }
 
 (async () => {
