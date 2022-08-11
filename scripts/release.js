@@ -59,10 +59,10 @@ const gitPush = async (version) => {
     await execAsync(`npm run changelog:init`);
 
     /** 提交commit */
-    await gitCommit(version);
+    await gitCommit(newVersion);
 
     /** git push --follow-tags */
-    await gitPush()
+    await gitPush();
   } catch (error) {
     console.log(chalk.red(error.stderr));
   }
