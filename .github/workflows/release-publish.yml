@@ -24,11 +24,12 @@ jobs:
       - name: run predeploy
         id: predeploy
         run: |
+          echo ${{ github.ref }}
+          echo ${{ github.ref_name }}
           npm install
           npm run predeploy
 
       - name: Create a Release
-        if: ${{ steps.predeploy.outputs.shouldRelease == 'true' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         # run: gh release create ${{ steps.package-version.outputs.current-version}} --target master -p
@@ -38,7 +39,6 @@ jobs:
           gh release create ${{ steps.predeploy.outputs.version }} --target master $IS_PRERELEASE --notes '${{ steps.predeploy.outputs.changeLog }}'
 
       - name: 'npm publish'
-        if: ${{ steps.predeploy.outputs.shouldRelease == 'true' }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
