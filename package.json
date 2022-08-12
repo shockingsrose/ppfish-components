@@ -19,7 +19,7 @@
     "lint-fix": "npm run lint-fix:script && npm run lint-fix:style",
     "lint-fix:script": "npm run lint:script -- --fix",
     "lint-fix:style": "npm run lint:style -- --fix",
-    "predeploy": "node scripts/predeploy.js",
+    "predeploy": "DEPLOY_GITHUB_PAGES=true node scripts/predeploy.js",
     "release": "node scripts/release.js",
     "pub": "npm publish ./lib",
     "pub:alpha": "npm publish ./lib --tag alpha",
