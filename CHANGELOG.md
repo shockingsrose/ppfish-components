@@ -1,3 +1,7 @@
+## [2.2.12-alpha.0](https://github.com/NSFI/ppfish-components/compare/v2.2.11...v2.2.12-alpha.0) (2022-08-12)
+
+
+
 ## [2.2.11](https://github.com/NSFI/ppfish-components/compare/v2.2.10...v2.2.11) (2022-08-12)
 
 
