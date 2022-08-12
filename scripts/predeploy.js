@@ -41,6 +41,8 @@ const run = async () => {
 
   outputs.shouldRelease = await checkVersionShouldRelease(version);
 
+  console.log(outputs);
+
   Object.entries(outputs).forEach(([key, value]) => {
     core.setOutput(key, value);
   })
