@@ -2,7 +2,7 @@ name: Preview Site Deploy
 
 on:
   workflow_run:
-    workflows: [release and publish]
+    workflows: [Release Publish]
     types:
       - completed
   # Allows you to run this workflow manually from the Actions tab
