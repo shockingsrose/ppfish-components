@@ -1,3 +1,12 @@
+## [2.2.14](https://github.com/NSFI/ppfish-components/compare/v2.2.13...v2.2.14) (2022-08-12)
+
+
+### Features
+
+* 修改触发条件 ([b12f95c](https://github.com/NSFI/ppfish-components/commit/b12f95ccaf52f7bc1a0eb7f46df22f1089d83526))
+
+
+
 ## [2.2.13](https://github.com/NSFI/ppfish-components/compare/v2.2.13-alpha.0...v2.2.13) (2022-08-12)
 
 
