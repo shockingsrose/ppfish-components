@@ -41,7 +41,8 @@ const run = async () => {
   const preid = version.replace(/[\d.-]/g, '');
   outputs.pubScript = preid ? `pub:${preid}` : 'pub';
 
-  outputs.shouldRelease = await checkVersionShouldRelease(version);
+  /** TODO 判断是否需要release，目前github actions会抛出报错，但是不影响整体流程 */
+  // outputs.shouldRelease = await checkVersionShouldRelease(version);
 
   console.log(outputs);
 
