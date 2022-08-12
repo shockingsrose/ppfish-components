@@ -1,6 +1,6 @@
 {
   "name": "ppfish-fork",
-  "version": "2.2.10",
+  "version": "2.2.11",
   "description": "fish design ui components",
   "scripts": {
     "dev": "babel-node --max-old-space-size=4096 tools/openSite.js",
