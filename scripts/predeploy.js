@@ -3,6 +3,9 @@ const path = require('path');
 const pkg = require('../package.json');
 const core = require('@actions/core')
 
+// TODO 增加字段判断是否要发布github page
+
+
 const changeLogPath = path.join(__dirname, '../CHANGELOG.md');
 
 const run = async () => {
