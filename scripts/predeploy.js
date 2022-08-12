@@ -3,8 +3,8 @@ const path = require('path');
 const pkg = require('../package.json');
 const core = require('@actions/core')
 
-// TODO 增加字段判断是否要发布github page
-
+// 判断是否要发布github page
+const { DEPLOY_GITHUB_PAGES } = process.env;
 
 const changeLogPath = path.join(__dirname, '../CHANGELOG.md');
 
@@ -15,7 +15,7 @@ const run = async () => {
   /**获取最新版本changeLog */
   const [, changeLog] = /(###\s+[\w.]+\n[\s\S]+?)###/.exec(changeLogData);
 
-  const outputs = { version, changeLog };
+  const outputs = { version, changeLog, deployGithubPages: !!DEPLOY_GITHUB_PAGES };
 
   const isPrerelease = /[\d.]+-[\w.]+/.test(version);
   outputs.prerelease = isPrerelease;
