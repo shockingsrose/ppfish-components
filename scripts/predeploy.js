@@ -19,6 +19,8 @@ const changeLogPath = path.join(__dirname, '../CHANGELOG.md');
 const checkVersionShouldRelease = async (version) => {
   const { stdout } = await execAsync('git tag');
 
+  console.log('git tags\n', stdout);
+
   return !stdout.includes(version)
 }
 
