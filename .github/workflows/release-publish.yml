@@ -2,8 +2,8 @@ name: Release Publish
 
 on:
   push:
-    branches:
-      - '2.x'
+    tags:
+      - v2.*
 
 jobs:
   bump-version:
